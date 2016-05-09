@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'racing-app',
   template: `<h1>{{heading}}</h1>
-<h2>Cash left enter races: {{cash | currency:'USD':true}} </h2>
+<h2>Cash left to enter races: {{cashLeft() | currency:'USD':true}} </h2>
 <ul>
   <li *ngFor="let race of races">
     <h2>{{race.name}} {{race.entryFee | currency:'USD':true}}</h2>
@@ -49,6 +49,10 @@ export class AppComponent {
       if (race.isRacing) sum += race.entryFee;
     }
     return sum;
+  }
+
+  cashLeft() {
+    return this.cash - this.totalCost();
   }
 
 }
