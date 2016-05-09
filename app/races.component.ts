@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-races',
-
+  templateUrl: 'app/races.component.html'
 })
 export class RacesComponent {
   heading = "Ultra Racing Schedule"
