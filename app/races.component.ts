@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
 <h2>Total cost: {{totalCost() | currency:'USD':true}}</h2>
   `
 })
-class RacesComponent {
+export class RacesComponent {
   heading = "Ultra Racing Schedule"
   cash = 10000;
   races = [{

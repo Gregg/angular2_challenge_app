@@ -7,6 +7,6 @@ import { RacesComponent } from './races.component';
 
 `
 })
-class AppComponent {
+export class AppComponent {
   heading = "Ultra Racing Schedule"
 }
