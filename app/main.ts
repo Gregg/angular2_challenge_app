@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   selector: 'racing-app',
   template: `<h1>{{heading}}</h1>
 <ul>
-  <li>
+  <li *ngFor="let race of races">
     <h2>{{race.name}}</h2>
     <p>{{race.date}}</p>
     <p>{{race.about}}</p>
