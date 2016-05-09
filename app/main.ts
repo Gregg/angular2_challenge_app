@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'racing-app',
   template: `<h1>{{heading}}</h1>
+<h2>Cash left enter races: {{cash | currency:'USD':true}} </h2>
 <ul>
   <li *ngFor="let race of races">
     <h2>{{race.name}} {{race.entryFee | currency:'USD':true}}</h2>
@@ -13,10 +14,12 @@ import { Component } from '@angular/core';
     <h3 *ngIf="race.isRacing">Already Racing</h3>
   </li>
 </ul>
+<h2>Total cost: </h2>
   `
 })
 export class AppComponent {
   heading = "Ultra Racing Schedule"
+  cash = 10000;
   races = [{
     "id": 1,
     "name": "Daytona Thunderdome",
@@ -37,8 +40,8 @@ export class AppComponent {
     "date": new Date('2512-07-12T21:00:00'),
     "about": "Fly between buildings in the electronic sky.",
     "entryFee": 4300,
-    "isRacing": false
-  }
+    "isRacing": true
+  }];
 
 }
 
