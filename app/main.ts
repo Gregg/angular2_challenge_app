@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
     <h2>{{race.name}}</h2>
     <p>{{race.date}}</p>
     <p>{{race.about}}</p>
-    <button>Enter Race</button>
-    <h3>Already Racing</h3>
+    <button *ngIf="!race.isRacing">Enter Race</button>
+    <h3 *ngIf="race.isRacing">Already Racing</h3>
   </li>
 </ul>
   `
