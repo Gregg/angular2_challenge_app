@@ -11,7 +11,10 @@ export class RacesComponent {
   heading = "Ultra Racing Schedule"
   cash = 10000;
   races: Race[];
-
+  
+  ngOnInit() {
+    this.races = RACES;
+  }
 
   totalCost() {
     let sum = 0;
