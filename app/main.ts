@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 <ul>
   <li *ngFor="let race of races">
     <h2>{{race.name}} {{race.entryFee | currency:'USD':true}}</h2>
-    <p>{{race.date}}</p>
+    <p>{{race.date | date:'yMMMdhm'}}</p>
     <p>{{race.about}}</p>
     <button *ngIf="!race.isRacing">Enter Race</button>
     <h3 *ngIf="race.isRacing">Already Racing</h3>
