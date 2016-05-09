@@ -1,6 +1,6 @@
 import { Race } from './race';
 
-[{
+export const RACES: Race[] = [{
   "id": 1,
   "name": "Daytona Thunderdome",
   "date": new Date('2512-01-04T14:00:00'),
