@@ -8,3 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   heading = "Ultra Racing Schedule"
 }
+
+bootstrap(AppComponent);
