@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
     <h3 *ngIf="race.isRacing">Already Racing</h3>
   </li>
 </ul>
-<h2>Total cost: </h2>
+<h2>Total cost: {{totalCost()}}</h2>
   `
 })
 export class AppComponent {
@@ -42,6 +42,14 @@ export class AppComponent {
     "entryFee": 4300,
     "isRacing": true
   }];
+
+  totalCost() {
+    let sum = 0;
+    for (let race of this.races) {
+      if (race.isRacing) sum += race.entryFee;
+    }
+    return sum;
+  }
 
 }
 
