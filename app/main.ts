@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
     <h3 *ngIf="race.isRacing">Already Racing</h3>
   </li>
 </ul>
-<h2>Total cost: {{totalCost()}}</h2>
+<h2>Total cost: {{totalCost() | currency:'USD':true}}</h2>
   `
 })
 export class AppComponent {
