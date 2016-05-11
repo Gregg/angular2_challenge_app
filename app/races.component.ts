@@ -15,7 +15,7 @@ export class RacesComponent {
   constructor(private raceService: RaceService) { }
 
   ngOnInit() {
-    this.races = 
+    this.races = this.raceService.getRaces();
   }
 
   totalCost() {
