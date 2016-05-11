@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Race } from './race';
-import { RACES } from './mocks';
+
 
 @Component({
   selector: 'my-races',
@@ -12,8 +12,10 @@ export class RacesComponent {
   cash = 10000;
   races: Race[];
 
+
+
   ngOnInit() {
-    this.races = RACES;
+    this.races =
   }
 
   totalCost() {
