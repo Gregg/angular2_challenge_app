@@ -15,7 +15,7 @@ export const RACES: Race[] = [{
   "date": new Date('2512-07-03T20:00:00'),
   "about": "Drift down the streets of a city almost sunk under the ocean.",
   "entryFee": 4700,
-  "isRacing": true,
+  "isRacing": false,
   "image": "/images/san_francisco_ruins.jpg",
   "imageDescription": "Golden Gate Bridge with lasers"
 }, {

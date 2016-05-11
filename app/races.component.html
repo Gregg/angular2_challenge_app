@@ -17,10 +17,10 @@
             <p class="price">{{race.entryFee | currency:'USD':true}}</p>
           </td>
           <td>
-            <button class="button" *ngIf="!race.isRacing">Enter Race</button>
+            <button class="button" *ngIf="!race.isRacing" >Enter Race</button>
             <div *ngIf="race.isRacing">
               <p class="status">Racing</p>
-              <button class="button-cancel">Cancel Race</button>
+              <button class="button-cancel" >Cancel Race</button>
             </div>
           </td>
         </tr>
