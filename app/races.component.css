@@ -115,6 +115,15 @@ li:last-child {
   text-align: center;
 }
 
+.cash {
+  background: #000;
+  border: none;
+  display: inline-block;
+  height: 30px;
+  margin: 0px;
+  width: 150px;
+}
+
 /* ----- State ----- */
 
 .unavailble {
