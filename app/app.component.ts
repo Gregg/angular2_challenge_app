@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RacesComponent } from './races.component';
-
+import { RaceService } from './race.service';
 
 @Component({
   selector: 'racing-app',
@@ -10,7 +10,8 @@ import { RacesComponent } from './races.component';
 </header>
 <my-races></my-races>
 `,
-  directives: [RacesComponent]
+  directives: [RacesComponent],
+  providers:[RaceService]
 })
 export class AppComponent {
   heading = "Ultra Racing Schedule"
