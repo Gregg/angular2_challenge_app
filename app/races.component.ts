@@ -28,4 +28,8 @@ export class RacesComponent {
     return this.cash - this.totalCost();
   }
 
+  cancelRace(race) {
+    race.isRacing = false;
+  }
+
 }
