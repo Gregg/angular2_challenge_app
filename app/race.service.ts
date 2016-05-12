@@ -10,6 +10,7 @@ export class RaceService {
   constructor(private http: Http) { }
 
   getRaces() {
-    return
+    return this.http.get('app/races.json')
+          .map(response => <Race[]>response.json().racesData);
   }
 }
