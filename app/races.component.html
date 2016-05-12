@@ -11,7 +11,7 @@
         <tr>
           <td>
             <h3>{{race.name}}</h3>
-            <p class="date">{{race.date | date:'yMMMdhm'}}</p>
+            <p class="date">{{castDate(race.date) | date:'yMMMdhm'}}</p>
             <p class="description">{{race.about}}</p>
           </td>
           <td>
