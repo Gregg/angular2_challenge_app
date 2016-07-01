@@ -1,6 +1,6 @@
 (function(global) {
 
-  var ngVer = '@2.0.0-rc.3'; // lock in the angular package version; do not let it float to current!
+  var ngVer = '@2.0.0-rc.4'; // lock in the angular package version; do not let it float to current!
 
   //map tells the System loader where to look for things
   var  map = {
