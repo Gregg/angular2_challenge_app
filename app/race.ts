@@ -1,7 +1,7 @@
 export class Race {
   id: number;
   name: string;
-  date: date;
+  date: Date;
   about: string;
   entryFee: number;
   isRacing: boolean;
