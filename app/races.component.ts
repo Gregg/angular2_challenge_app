@@ -29,8 +29,8 @@ export class RacesComponent {
     return sum;
   }
 
-  castDate(date) {
-    return new Date(date);
+  castDate(date: Date) {
+    return new Date(date.toString());
   }
 
   cashLeft() {
